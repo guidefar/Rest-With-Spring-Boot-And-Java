@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class GreetingController {
+    //http://localhost:8080/greeting - utilizando esse endpoint
     private static final String template = "Hello, %s";
     private final AtomicLong counter = new AtomicLong();//Gerando ID automaticamente
     @RequestMapping("/greeting")
